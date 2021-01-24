@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index-landing-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora" rel="stylesheet"> 
+    <title>New Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a new event">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="David Smith Solano">
+    <meta name="google-site-verification" content="YEHXHqRyjW2Q3-XSpJ_CfpscrxNnk_ZlxgDJAx4yO4Y" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+        var event = {eventName: " ", eventPlace: " "};
+        var dateTimeRange = {startDateTime: " ", endDateTime: " "};
+        
+    </script>
+    <script src="js/externalJSForTrainingPurposes.js"></script> 
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a id="index-page" href="index.html">Home</a></li>
+            <li><a id="index-page" href="javascript-training.html">Back</a></li>
+        </ul>
+    </nav>
+    <header class="headerCommon">
+        <h1 style="font-size:300%; text-align: center;">Create a new event</h1>
+    </header>
+    <h1>Create New Calendar Event &#128197;</h1>
+    <p><span>&#129500;&#127996;</span> Sirenito <span>&#129500;&#127996;</span></p>
+    <p>La idea de esta sección es crear nuevos objetos de tipo evento que se almacenarán en variables de tipo evento para luego ser enviadas por JSON.</p>
+    <p>La variable evento sería algo así: var event = {startDateTime:"Wed Jul 12 2019 16:00:24 GMT-0600 ", endDateTime:"Wed Juj 12 2019 19:00:24 GMT-0600 ", lieue:"Casa Blanca", eventSummary: function(){return "Start date: " + this.startDateTime + <br> + "End date: " + this.endDateTime + <br> + "Location: this.lieue"}};</p>
+    <button type="button" onclick="document.getElementById('placeToDisplayEvent').innerHTML = event.eventSummary()">Show me the event!</button>
+    <p id="placeToDisplayEvent">Display the event here!:</p>
+    <p>This is the link to the <a href="https://developers.google.com/calendar/" target="_blank">Google Calendar API</a>. This API could hekp me develop the connection I need between my app and the Google Calendar. Explore it and learn how it works.</p>
+    <p>This the <a href="https://developers.google.com/contacts/v3/" target="_blank">Google Contacts API</a>.</p>
+    <footer>
+        <a href="contactus.html">Contáctenos</a>
+        <a href="findus.html">Encuéntrenos</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/navigation_style.css">
+    <title>Mi Factura Digital - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para ubicarnos.">
+    <meta name="keywords" content="Encuéntrenos, find us, store locator">
+    <meta name="author" content="David Smith Solano">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a id="index-a-0001" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 style="font-size:300%; text-align: center;">Encuéntrenos</h1>
+    </header>
+    
+    <p>Dame mis coordenadas</p>
+    <button onclick="getLocation()" style="display: inline;">Ahora</button>
+    <p id="demo"></p>
+
+    <br>
+    
+    <div id="map" style="width:100%;height:400px;"></div>
+    <script type="text/javascript">
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(9.941383, -84.057288),
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyChCLhwp4NR-Y5iGusMSMFQ5Xa8hodtyE8"></script>
+    
+    <br>
+    <script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+    
+</body>
+
+</html>

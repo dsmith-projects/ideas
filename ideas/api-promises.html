@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>MFD - Promises & API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test API page to play with API callbacks and JS 6 promises.">
+    <meta name="keywords" content="HTML,CSS,JavaScript, ECMAScript 6.0">
+    <meta name="author" content="David Smith Solano">
+    <meta property="og:title" content="Sample blog using API and promises"/>
+    <meta property="og:url" content="http://mifacturadigital.cr/api-promises.html/" />
+    <meta property="og:description" content="Test API page to play with API callbacks and JS 6 promises.">
+    <meta property="og:image" content="http://mifacturadigital.cr/imgs/avatar-young-woman.png">
+    <meta property="og:type" content="blog" />
+    <meta property="og:locale" content="en_CR" />
+
+    <link rel="stylesheet" type="text/css" href="css/api-promises_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <script type="text/javascript" src="js/api-promises-logic.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- <nav>
+        <ul class="navbar">
+            <li><a id="index-page" href="index.html">Home</a></li>
+        </ul>
+    </nav> -->
+    <!-- <header class="headerCommon">
+        <h1 style="font-size:300%; text-align: center;">Post it!</h1>
+    </header> -->
+    <!-- Aquí empieza todo el contenido del blog y los posts -->
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>David's Blog</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Comments</a></li>
+                    <li><a href="#section3">Users</a></li>
+                    <li><a href="#section4">Photos</a></li>
+                </ul>
+                <br>
+                <div class="input-group">
+                    <input type="text" name="search-box" class="form-control" placeholder="Search post / comment / user ...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <ul class="navbar">
+                    <li><a id="index-page" href="index.html">Home</a></li>
+                </ul>
+                <header class="headerCommon">
+                    <h1 style="font-size:300%; text-align: center;">Post it!</h1>
+                </header>
+                <div id="posts">
+                    <!-- <div class="post"> -->
+                        <!-- <h4><small>RECENT POSTS</small></h4>
+                        <hr>
+                        <h2 id="post-title">This is my new post!</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Post by user Id: <span id="userId">565</span><span> | Post Id: </span><span id="postId">30</span></h5>
+                        <h5><span class="label label-danger">Food</span><span class="label label-primary">Success</span></h5>
+                        <p id="post-body">En una sociedad de raíces conservadoras como la nuestra requerimos transparentar nuevos límites que incluyan no sólo las consideraciones legales sino también las definiciones de moral personal y deberes religiosos, para desprejuiciar el debate y minimizar el peso del enjuiciamiento que lleva implícito el aborto.</p>
+                        <p>
+                            <span class="badge">2</span> Comments:
+                            <button type="button" class="btn btn-success btn-xs" onclick="loadComments()">Load comments</button>
+                        </p>
+                        <br>
+                        <div class="row comments">
+                            <div class="comment"> -->
+                                <!-- Container for the avatar -->
+                                <!-- <div class="col-sm-2 text-center">
+                                    <img src="imgs/avatar-young-man.png" class="img-circle" height="65" width="65" alt="Avatar">
+                                </div> -->
+                                <!-- Container for the comment -->
+                               <!--  <div class="col-sm-10">
+                                    <h4>John Row <small>john.row@gmail.com | </small><small>Comment id: 1</small></h4>
+                                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <br>
+                        <br>
+                    </div> -->
+                </div>
+                <h4>Post a comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container-fluid ">
+        <p>For any questions or concerns feel free to reach out to me :)</p>
+        <a href="contactus.html ">Contact me</a><span> | </span>
+        <a href="findus.html ">Find us</a>
+    </footer>
+</body>
+
+</html>

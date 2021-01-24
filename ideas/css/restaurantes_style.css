@@ -1,0 +1,31 @@
+body{
+	background-color: #FFE4E1;
+	font-family: 'Sofia';
+}
+
+header{
+	text-align: center;
+}
+
+section section{
+	border: 3px dotted #9900CC;
+	margin: 10px;
+	width: 370px;
+	height: 530px;
+	
+	padding: 10px;
+}
+
+section.bloques {
+	float: left;
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+footer{	
+	clear: left;
+	margin: auto;
+	text-align: center;
+}

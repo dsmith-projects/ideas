@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Creación de cuenta de usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de creación de cuenta de usuario, sign up page">
+    <meta name="keywords" content="sign up, crear cuenta de usuario">
+    <link rel="stylesheet" type="text/css" href="css/navigation_style.css">
+    <link rel="stylesheet" type="text/css" href="css/signup_style.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a id="index-a-0001" href="index.html">Home</a></li>
+            <li><a id="index-a-0002" href="pacosmith.html">Paco's Site</a></li>
+            <li><a id="index-a-0003" href="pruebasHTML.html">Pruebas HTML</a></li>
+            <li><a id="index-a-0004" href="loginpage.html">Login Page</a></li>
+            <li><a id="index-a-0005" href="pruebasIniciales.html">Pruebas iniciales</a></li>
+            <li><a id="index-a-0006" href="danny.html">Danny Trejos</a></li>
+            <li><a id="index-a-0007" href="babuchis.html">Babuchis</a></li>
+            <li><a id="index-a-0008" class="active" href="signup.html">Crear cuenta</a></li>
+            <li><a id="index-a-0100" href="default.html">Doña Mary</a></li>
+        </ul>
+    </nav>
+    <header class="headerCommon">
+        <h1 style="font-size:300%;">Crear cuenta de usuario:</h1>
+    </header>
+    <div>
+        <form action="/action_page.php" method="post" name="formulario" onclick="return validateForm()">
+            <fieldset>
+                <legend>Información personal:</legend>
+                <label for="name1">Nombre</label>
+                <input type="text" name="name1" id="name1" autofocus>
+                <label for="surnames">Apellidos</label>
+                <input type="text" name="surnames" id="surnames">
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Hombre</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Mujer</label>
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Otro</label>
+                <input type="radio" name="gender" value="nogender" id="nogender">
+                <label for="nogender">Que más da</label>
+                <br>
+                <label for="bday">Fecha de nacimiento</label>
+                <input type="date" name="bday" id="bday" min="1900-01-01">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="tel" id="tel">
+                <label for="selfpic">Cargar foto de perfil</label>
+                <input type="file" name="selfpic" id="selfpic" multiple="5">
+            </fieldset>
+            <fieldset>
+                <legend>Información demográfica:</legend>
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="alajuela">Alajuela</option>
+                    <option value="cartago">Cartago</option>
+                    <option value="guanacaste">Guanacaste</option>
+                    <option value="heredia">Heredia</option>
+                    <option value="limon">Limón</option>
+                    <option value="puntarenas">Puntarenas</option>
+                    <option value="sanjose">San José</option>
+                </select>
+                <br>
+                <label for="canton">Cantón</label>
+                <select name="canton" id="canton">
+                    <option value="alajuela">Alajuela</option>
+                    <option value="cartago">Cartago</option>
+                    <option value="guanacaste">Guanacaste</option>
+                    <option value="heredia">Heredia</option>
+                    <option value="limon">Limón</option>
+                    <option value="puntarenas">Puntarenas</option>
+                    <option value="sanjose">San José</option>
+                </select>
+                <br>
+                <label for="distrito">Distrito</label>
+                <select name="distrito" id="distrito">
+                    <option value="alajuela">Alajuela</option>
+                    <option value="cartago">Cartago</option>
+                    <option value="guanacaste">Guanacaste</option>
+                    <option value="heredia">Heredia</option>
+                    <option value="limon">Limón</option>
+                    <option value="puntarenas">Puntarenas</option>
+                    <option value="sanjose">San José</option>
+                </select>
+                <br>
+                <label for="direccion">Dirección</label>
+                <textarea name="direccion" rows="10" cols="30" id="direccion"></textarea>
+                <br>
+                <label for="website">¿Tiene sitio web?</label>
+                <input type="url" name="website" id="website">
+            </fieldset>
+            <fieldset>
+                <legend>Encuesta</legend>
+                <label for="medio">¿Cómo se enteró de nosotros?</label>
+                <input lista="medios" name="medio" id="medio">
+                <datalist id="medios">
+                    <option value="Redes sociales">
+                        <option value="Correo electrónico">
+                            <option value="Amigo/Conocido">
+                                <option value="Radio">
+                                    <option value="Televisión">
+                </datalist>
+                <br>
+                <label for="favcolor">Color favorito</label>
+                <input type="color" name="favcolor" value="#FF3399" id="favcolor">
+                <br>
+                <label for="rating">¿Qué calificación nos daría? [0-5]</label>
+                <input type="number" name="rating" min="0" max="5" id="rating">
+            </fieldset>
+            <fieldset>
+                <legend>Cuenta de usuario</legend>
+                <label for="username">Nombre de usuario</label>
+                <input type="text" name="username" id="username">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" title="Mayúsculas, minúsculas, números y los símbolos: - ; _ ; . ; !">
+            </fieldset>
+            <input type="submit" value="Crear cuenta">
+            <input type="reset">
+            <button type="button" onclick="alert('¿Está seguro que desea salir?')">Cancelar</button>
+        </form>
+        <script>
+        function validateForm() {
+            var valFirstName = document.forms["formulario"]["name1"].value;
+            if (valFirstName == "") {
+                alert("Por favor, ingrese un nombre");
+                return false;
+            }
+        }
+        </script>
+    </div>
+</body>
+
+</html>

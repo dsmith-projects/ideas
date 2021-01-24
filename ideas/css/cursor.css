@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	left: 100px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+#toDoModule {
+	width: 50%;
+	margin: auto;
+	/*border: 1px solid red;*/
+	padding: 30px;
+	height: 400px;
+	background-color: #FF7F50;
+	overflow: scroll;
+}
+
+.button {    
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;    
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.button-blue {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #40E0D0;
+}
+
+.button-blue:hover {
+    background-color: #40E0D0;
+    color: white;
+}
+
+#myToDoList li {
+	background-color: #f1db74;
+	font-size: 24px;
+	list-style-type: circle;
+}
+
+#myToDoList li:nth-child(odd) {
+    background: #B0E0E6;
+}
+
+#netToDo {
+	border-radius: 2px;
+}
+
+#newToDo:focus {
+    background-color: #FFEFD5;
+}
+

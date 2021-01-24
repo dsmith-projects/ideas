@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navigation_style.css">
+    <link rel="stylesheet" type="text/css" href="css/pruebasiniciales_style.css">
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body style="background-color:lightblue;">
+    <nav>
+        <ul class="navbar">
+            <li><a id="index-a-0001" href="index.html">Home</a></li>
+            <li><a id="index-a-0002" href="pacosmith.html">Paco's Site</a></li>
+            <li><a id="index-a-0003" href="pruebasHTML.html">Pruebas HTML</a></li>
+            <li><a id="index-a-0004" href="loginpage.html">Login Page</a></li>
+            <li><a id="index-a-0005" class="active" href="pruebasIniciales.html">Pruebas iniciales</a></li>
+            <li><a id="index-a-0006" href="danny.html">Danny Trejos</a></li>
+            <li><a id="index-a-0007" href="babuchis.html">Babuchis</a></li>
+            <li><a id="index-a-0008" href="signup.html">Crear cuenta</a></li>
+            <li><a id="index-a-0100" href="default.html">Doña Mary</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h3>Test Page</h3>
+    </header>
+    
+    <?php echo "Hello World. Today is ". date("l"). ". "; ?><span>How are you?</span>
+    <br>
+    <span>Hello World. Today is </span>
+    <?php echo date("l"); ?><span>. How are you?</span>
+    <br>
+    <script type="text/javascript">
+    document.write("Hello World. Today is " + Date());
+    </script>
+    <br>
+    <?php echo "Hello world"; ?>
+    <?php // test1.php 
+    echo "<br />";
+    $username = "Fred Smith"; 
+    echo $username;
+    echo "<br />"; 
+    $current_user = $username; 
+    echo $current_user;
+?>
+</body>
+
+</html>

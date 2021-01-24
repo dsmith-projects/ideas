@@ -1,0 +1,13 @@
+body {
+    font-family: courier;
+}
+
+h1 {
+    color: #e55300;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+p {
+    border: 1px solid black;
+}

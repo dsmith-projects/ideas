@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/restaurantes_style.css">
+    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <title>Doña Mary - Restaurantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menú - Restaurante Doña Mary">
+    <meta name="keywords" content="menú, carta, cartilla">
+    <meta name="author" content="David Smith Solano">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <a href="default.html"><img src="imgs/logo_donamary2.png" alt="Restaurante Doña Mary"></a>
+    </header>
+    <section id="sec1">
+        <h1>Aquí nos puedes encontrar:</h1>
+    </section>
+    <section id="sec2">
+        <section class="bloques">
+            <h3>Guadalupe</h3>
+            <p>Del Walmart de Guadalupe 300 m al este. Frente al Banco Nacional</p>
+            <p><span class="negrita">Teléfono:</span> 24345566</p>
+            <p><span class="negrita">Horario:</span> abierto de lunes a jueves de 10 am a 10 pm y de viernes a domingo hasta las 12 md.</p>
+            <div id="mapGuada" style="width:300px;height:250px;"></div>
+            <script type="text/javascript">
+            function myMap() {
+                var mapOptionsGuada = {
+                    center: new google.maps.LatLng(9.941383, -84.057288),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("mapGuada"), mapOptionsGuada);
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyChCLhwp4NR-Y5iGusMSMFQ5Xa8hodtyE8"></script>
+        </section>
+        <section class="bloques">
+            <h3>San Francisco de Heredia</h3>
+            <p>Frente a la Clínica Santa Rita. Edificio esquinero</p>
+            <p><span class="negrita">Teléfono:</span> 25253355</p>
+            <p><span class="negrita">Horario:</span> abierto de lunes a jueves de 10 am a 10 pm y de viernes a domingo hasta las 12 md.</p>
+            <div id="mapHeredia" style="width:300px;height:250px;"></div>
+            <script type="text/javascript">
+            function myMap() {
+                var mapOptionsHeredia = {
+                    center: new google.maps.LatLng(10.0040442,-84.0738309),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("mapHeredia"), mapOptionsHeredia);
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyChCLhwp4NR-Y5iGusMSMFQ5Xa8hodtyE8"></script>
+        </section>
+        <section class="bloques">
+            <h3>Liberia</h3>
+            <p>400 m al norte de BAC San José, en el Centro Comercial La Bajura</p>
+            <p><span class="negrita">Teléfono:</span> 45468855</p>
+            <p><span class="negrita">Horario:</span> abierto de lunes a sábado de 10 am a 10 pm. Domingos cerrado</p>
+            <div id="mapLiberia" style="width:300px;height:250px;"></div>
+            <script type="text/javascript">
+            function myMap() {
+                var mapOptionsLiberia = {
+                    center: new google.maps.LatLng(10.630891,-85.4415327),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("mapLiberia"), mapOptionsLiberia);
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyChCLhwp4NR-Y5iGusMSMFQ5Xa8hodtyE8"></script>
+        </section>
+    </section>
+    <footer>
+        <a href="contactenos.html">Contáctenos</a>
+        <a href="menu.html">Menú</a>
+    </footer>
+</body>
+
+</html>

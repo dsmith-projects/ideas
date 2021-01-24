@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/ajax-xhr-php-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora" rel="stylesheet">
+    <title>Mi Factura Digital : AJAX - XMLHttpRequest - PHP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial de pruebas y base para el desarrollo de un proyecto.">
+    <meta name="keywords" content="HTML,CSS,JavaScript, emprededurismo, página personal, personal web page, entrepreneur">
+    <meta name="author" content="David Smith Solano">
+    <meta name="google-site-verification" content="YEHXHqRyjW2Q3-XSpJ_CfpscrxNnk_ZlxgDJAx4yO4Y" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="js/ajax-xhr-php.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a id="index-page" href="index.html">Back home</a></li>
+        </ul>
+    </nav>
+    <h1>AJAX &amp; XMLHttpRequest</h1>
+    <p>This example will try to guess the name you type and display it as a suggestion</p>
+    <p><b>Start typing a name in the input field below:</b></p>
+    <form>
+        <label for="input-box">First name:</label>
+        <input type="text" onkeyup="showHint(this.value)" id="input-box">
+    </form>
+    <p>Suggestions: <span id="txtHint"></span></p>
+</body>
+
+</html>

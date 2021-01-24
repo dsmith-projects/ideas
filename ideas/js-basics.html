@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index-landing-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora" rel="stylesheet"> 
+    <title>JavaScript Training - W3 Schools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de pruebas del online course de JavaScript">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="David Smith Solano">
+    <meta name="google-site-verification" content="YEHXHqRyjW2Q3-XSpJ_CfpscrxNnk_ZlxgDJAx4yO4Y" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+    function changeParagraphContent(){
+        document.getElementById("callingAFunction").innerHTML = "Violà!";
+    }
+    </script>
+    <script src="js/externalJSForTrainingPurposes.js"></script> 
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a id="index-page" href="index.html">Home</a></li>
+            <li><a id="index-page" href="javascript-training.html">Javascript Training Page</a></li>
+            <li><a id="index-page" href="new-event.html">New Event</a></li>
+        </ul>
+    </nav>
+    <header class="headerCommon">
+        <h1 style="font-size:300%; text-align: center;">JavaScript Training - W3 Schools</h1>
+        <h4>Example 1:</h4>
+        <p>Display date and time when pressing a button that has an id</p>
+        <button type="button" onclick="document.getElementById('dateTime').innerHTML = Date()">Show me the date & time</button>
+        <p id="dateTime">Display it here!</p>
+        <h4>Example 2:</h4>
+        <p>Change the content of an HTML tag when pressing a button that has an id</p>
+        <button type="button" onclick="document.getElementById('tagContent').innerHTML = 'Hello JavaScript'">Replace some text</button>
+        <p id="tagContent">This text will be replaced!</p>
+        <p>&gt;&gt;&gt; Note: JavaScript accepts both double and single quotes</p>
+        <h4>Example 3:</h4>
+        <p>Replace an image with another and use buttons as switches</p>
+        <img id="bulbImage" src="imgs/pic_bulboff.gif" style="width:100px">
+        <button type="button" onclick="document.getElementById('bulbImage').src='imgs/pic_bulbon.gif'">Turn on the ligth</button>
+        <button type="button" onclick="document.getElementById('bulbImage').src='imgs/pic_bulboff.gif'">Turn off the ligth</button>
+        <h4>Example 4:</h4>
+        <p>Change the style of HTML elements by manipulating CSS</p>
+        <p id="textToBeIncreased">Make me bigger!!!!!</p>
+        <button type="button" onclick="document.getElementById('textToBeIncreased').style.fontSize='25px'">Make font larger!</button>
+        <h4>Example 5 and Example 6:</h4>
+        <p>Change the style to hide HTML elements and show hidden HTML by manipulating CSS</p>     
+        <button type="button" onclick="document.getElementById('textToBeHidden').style.display='none'">Hide</button>
+        <button type="button" onclick="document.getElementById('textToBeHidden').style.display='block'">Show</button>
+        <p id="textToBeHidden">Hide me and show me with button switches!!!!!</p>
+        <h4>Example 7:</h4>
+        <p id="emptyParagraph"></p>
+        <script>
+        document.getElementById("emptyParagraph").innerHTML = "I can manipulate HTML elements without using a button. How? By using the &lt;script&gt; tag. In fact, this text was inserted into this &lt;p&gt; without a button. Just by grabbing the HTML id and inserting the text.";
+        </script>
+        <p>&gt;&gt;&gt; Note: You can place any number of scripts in an HTML document. Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.</p>
+        <h4>Example 8:</h4>
+        <p id="callingAFunction">In this following example, we will see how we can add functions to the <b>HEAD</b> tags that we can call from anywhere from the HTML document, for example, from a button when it is clicked. We just need an action to invoke the function.</p>
+        <button type="button" onclick="changeParagraphContent()">Call function!</button>
+        <h4>Example 9:</h4>
+        <p id="callingAFunctionWithinBody">In this following example, we will see how we can add functions to the <b>BODY</b> tags that we can call from anywhere from the HTML document, for example, from a button when it is clicked. We just need an action to invoke the function. However, it is always recomended to place script tags at the end of your HTML documents because they can slow down the display of the page.</p>
+        <button type="button" onclick="changeParagraphContent2()">Call function!</button>
+        <script>
+        function changeParagraphContent2(){
+            document.getElementById("callingAFunctionWithinBody").innerHTML = "Violà!";
+        }
+        </script>
+        <h4>Example 10:</h4>
+        <p id="anotherParagraph">In this following example, we will see how we can add functions to an <b>EXTERNAL</b> JS FILE that we can call from anywhere from the HTML document, for example, from a button when it is clicked. We just need an action to invoke the function.</p>
+        <p>&gt;&gt;&gt; Note: We strongly recommend using external JS files to separate HTML code from JS code and because cached JS files can speed up the page load.</p>
+        <button type="button" onclick="callFunctionOnExternalFile()">Call function on external file!</button>
+        <h4>Example 11:</h4>
+        <p id="theLastParagraph">You can re-write the whole HTML document by calling document.write().</p>
+        <button type="button" onclick="document.write('I told you!')">Don't try it!</button>
+        <h4>Example 12:</h4>
+        <p id="someParagraphs">You can also send a browser alert by calling: window.alert();</p>
+        <button type="button" onclick="window.alert('Considrered yourself alerted!!!')">Send alert!</button>
+        <h4>Example 13:</h4>
+        <p id="moreOnParagraphs">You can also send a browser console messages for logging purposes. Click on the following button and discover the secret message for you on the browser console.</p>
+        <button type="button" onclick="console.log('I love you!!!')">Log a message!</button>
+        <h4>Example 14:</h4>
+        <p id="explanation">When you click on the following button, an function will be triggered.</p>
+        <span id="prgph01">55</span>
+        <span id="prgph02"> + </span>
+        <span id="prgph03">66</span>
+        <span id="prgph04"> = </span>
+        <span id="prgph05">?</span>
+        <button type="button" onclick="captureEventData()">SUM</button>
+        
+    </header>
+    
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/contactenos_style.css">
+    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <title>Contáctenos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto.">
+    <meta name="keywords" content="Contáctenos, contact us">
+    <meta name="author" content="David Smith Solano">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <a href="default.html"><img src="imgs/logo_donamary2.png" alt="Restaurante Doña Mary"></a>
+    </header>
+    <div id="formulario">
+        <h1>Contáctenos</h1>
+        <h2>Queremos saber su opinión:</h2>
+        <form action="mailto:dss.inbox@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Datos personales:</legend>
+                <label for="contact_name">Nombre:</label>
+                <input type="text" name="contact_name" id="contact_name">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email">
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="tel" id="tel">
+            </fieldset>
+            <fieldset>
+                <legend>Su comentario:</legend>
+                <textarea name="comentario" rows="8" cols="30" id="comentario" autofocus></textarea>
+            </fieldset>
+            <div id="cto">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+                <button type="button" onclick="alert('¿Está seguro que desea salir?')">Cancelar</button>
+            </div>
+            
+        </form>
+    </div>
+    <footer>
+        <a href="menu.html">Menu</a>
+        <a href="restaurantes.html">Encuéntrenos</a>
+    </footer>
+</body>
+
+</html>
